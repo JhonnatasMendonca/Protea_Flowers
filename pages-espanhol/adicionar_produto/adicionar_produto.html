@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto - Protea Flowers</title>
+    <link rel="stylesheet" href="estiloAdicionarProdutos.css">
+    <link rel="stylesheet" href="../../components/everyPages.css">
+  
+  <!-- Importação do jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <link rel="shortcut icon" href="../../components/images/favicon-2.png" type="image/x-icon">
+
+</head>
+<body>
+	<header id="box-principal">
+        <div class="header-top">
+            <nav class="botoes-vendedor">
+                <span class="Central-vendedor buttons">Centro de Vendedores</span>
+                <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Conviértete en Vendedor</a></span>
+            </nav>
+            <div class="barra-pesquisa">
+                <input 
+                type="search" 
+                name="pesquisar" 
+                id="input-pesquisa"
+                placeholder="Buscar..." onclick="this.placeholder=''">
+            </div>
+            <nav class="botoes-entrar-cadastrar">
+                <span class="entrar buttons"></span>
+                <span class="buttons" style="color: #0F270F"><a href="../cadastro_cliente/cadastroCliente.html">Registro</a></span>
+                <a href="../../pages/adicionar_produto/adicionar_produto.html">
+                    <img class="icons_paises" src="../../components/images/brasil.png">
+                </a>
+
+                <a href="../../pages-ingles/adicionar_produto-ing/adicionar_produto.html">
+                    <img class="icons_paises" src="../../components/images/eua.png">
+                </a>
+
+                <a href="">
+                    <img class="icons_paises" src="../../components/images/espanha.png">
+                </a>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+            <nav>
+                <span class="buttons"><a href="../home/index.html">HOGAR</a></span>
+                <span class="buttons"><a href="../produtos/produtos.html">PRODUCTOS</a></span>
+                <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
+                <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NUESTRA HISTORIA</a></span>
+                <span class="buttons"><a href="../contato/contato.html">CONTACTO</a></span>
+            </nav>
+            <div>
+                <img class="icon-header entrar" src="../../components/images/icon_person.png">
+                <img class="icon-header" src="../../components/images/icon_bell.png">
+                <a href="../carrinho_compras/carrinhoCompras.html">
+                    <img class="icon-header" src="../../components/images/icon_cart.png">
+                </a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <header id="box-principal-mobile">
+        <div class="box-logo-menu-mobile">
+            <img class="menu-img" src="../../components/images/meu.png">
+             <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+        </div>
+        <div class="box-menu-mobile">
+            <nav class="botoes-vendedor">
+                <div class="icons_linguage_chamada_mobile">
+                    <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Registro</a></span>
+                    <span class="Central-vendedor buttons">Centro de Vendedores</span>
+                    <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Conviértete en Vendedor</a></span>
+                </div>
+                
+                <div class="icons_linguage_chamada_mobile">
+                    <a href="../../pages/adicionar_produto/adicionar_produto.html">
+                        <img class="icons_paises" src="../../components/images/brasil.png">
+                    </a>
+
+                    <a href="../../pages-ingles/adicionar_produto-ing/adicionar_produto.html">
+                        <img class="icons_paises" src="../../components/images/eua.png">
+                    </a>
+
+                    <a href="">
+                        <img class="icons_paises" src="../../components/images/espanha.png">
+                    </a>
+                </div>
+            </nav>
+            <div class="header-top">
+                <div class="box-pesquisa-icons-mobile">
+                    <div class="barra-pesquisa">
+                        <img src="../../components/images/icon-search.png" alt="">
+                        <input 
+                        type="search" 
+                        name="pesquisar" 
+                        id="input-pesquisa"
+                        placeholder="Buscar..." onclick="this.placeholder=''">
+                    </div>
+                     <div class="icons-mobile">
+                        <img class="icon-header entrar" src="../../components/images/icon_person.png">
+                        <img class="icon-header" src="../../components/images/icon_bell.png">
+                        <a href="../carrinho_compras/carrinhoCompras.html">
+                            <img class="icon-header" src="../../components/images/icon_cart.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav class="nav-pages-mobile">
+                    <span class="buttons" style="color: #0F270F"><a href="../home/index.html">HOGAR</a></span>
+                    <span class="buttons"><a href="../produtos/produtos.html">PRODUCTOS</a></span>
+                    <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
+                    <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NUESTRA HISTORIA</a></span>
+                    <span class="buttons"><a href="../contato/contato.html">CONTACTO</a></span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <main>
+        <div class="info-breadcrumbs">
+            <span class="breadcrumbs">Hogar | Centro de Vendedores | Perfil del Vendedor |<span> Agregar Producto</span></span>
+        </div>
+
+        <section class="add_produto">
+            <form class="secao_1">
+                <div class="coluna">
+                    <label for="image"><strong><p>Imagem</p></strong></label>
+                    <div id="arquivo">
+                        <input type="image" name="image">
+                    </div>
+                    
+                </div>
+                <div class="coluna">
+                    <label for="nome"><strong><p>Nombre</p></strong></label>
+                    <input type="text" name="nome"> <br>
+                    <label for="valor"><strong><p>Precio Unitario</p></strong></label>
+                        <div id="preco">
+                            <p id="responsivo" style="color:#859479">R$</p>
+                            <input type="number" name="valor">
+                        </div> <br>
+                    <label for="qtd"><strong><p>Cantidad en Inventario</p></strong></label>
+                    <input type="number" name="qtd">
+                </div>
+
+                <div class="coluna test">
+                    <label><strong><p>Seleccione una categoría:</p></strong></label>
+                    <label>
+                        <p><input type="radio" name="categoria" value="flores-tropicais-de-verão">  Flores tropicales de verano</p> 
+                    </label>
+                    <label>
+                        <p><input type="radio" name="categoria" value="flores-tropicais-de-inverno">  Flores tropicales de invierno</p>
+                    </label>
+                    <label>
+                        <p><input type="radio" name="categoria" value="flores-de-primavera">  Flores de primavera</p>
+                    </label>
+                    <label>
+                        <p><input type="radio" name="categoria" value="sementes">  Semillas</p> 
+                    </label>
+                    <label>
+                        <p><input type="radio" name="categoria" value="folhagens">  Follaje</p> 
+                    </label>
+                </div>
+            </form>
+            <div class="secao_2">
+                <label><strong><p>Descrição</p></strong></label>
+                <textarea></textarea>
+            </div>
+            <a href="../perfil_vendedor/perfil_vendedor.html"><button>AGREGAR PRODUCTO</button></a>
+        </section>
+
+        <!--ESTA TELA NÃO POSSUI MODAL-->
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
+        <!-- <section>
+            <div class="chat_icon">
+                <img src="images/chat.png">
+            </div>
+            <div class="box-questions">
+                <div class="header">
+                    <div class="florea_perfil">
+                        <img id="florea_icon" src="images/florea.png">
+                        <p>Florea</p>
+                    </div>
+                    <img id="fechar_chat" src="images/fechar.png">
+                </div>
+                <p id="status"></p>
+                <div id="history">
+                  
+                </div>
+                <div class="footer">
+                    <input type="text" id="message-input" placeholder="Enviar uma mensagem...">
+                    <button class="btn-submit" id="btn-submit" onclick="sendMessage()"></button>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section> -->
+
+
+
+        <section class="icons_noturno">
+            <img id="fonte+" onclick="aumentarFonte()" style="cursor: pointer;" src="../../components/images/fonte+.png">
+            <img id="fonte-" onclick="diminuirFonte()" style="cursor: pointer;" src="../../components/images/fonte+.png">
+            <img id="icon_lua" style="cursor: pointer;" src="../../components/images/sol_lua.png">
+            <img id="icon_sol" style="cursor: pointer;" src="../../components/images/sol_lua.png">
+        </section>
+
+    	
+    </main>
+
+    <footer>
+            <h2>Póngase en contacto con nosotros para más información</h2>
+            <div class="box-footer">
+                <div class="box-left-footer">
+                    <ul>
+                        <li>Calle de las Colheitas, 258-A, Apipucos</li>
+                        <li>Recife, PE - Brazil</li>
+                        <li>CEP: 10254-330</li>
+                        <br>
+                        <br>
+                        <li>P&F DECORACIÓN Y AMBIENTACIÓN</li>
+                        <li>LTDA 08.591.212/0004-07</li>
+                    </ul>
+                </div>
+
+                <div class="logo-footer">
+                     <img src="../../components/images/logo.png">
+                </div>
+                
+                <div class="box-rigth-footer">
+                    <span>Encuéntranos en las redes sociales</span>
+                    <ul>
+                        <li>
+                            <img src="../../components/images/facebook.png">
+                        </li>
+                        <li>
+                            <img src="../../components/images/instagram.png">
+                        </li>
+                        <li>
+                            <img src="../../components/images/whatsapp.png">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="../../components/images/logotipo-do-pinterest.png">
+                        </li>
+                        <li>
+                            <img src="../../components/images/twitter.png">
+                        </li>
+                        <li>
+                            <img src="../../components/images/youtube.png">
+                        </li>
+                    </ul>
+                    <span>contato@proteaflowers.com.br</span>
+                </div>
+            </div>
+            
+        </footer>
+    <script type="text/javascript" src="../../components/script.js"></script>
+</body>
+</html>
