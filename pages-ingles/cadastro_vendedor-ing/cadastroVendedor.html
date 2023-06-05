@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Registration - Protea Flowers</title>
+    <link rel="stylesheet" href="estiloVendedor.css">
+    <link rel="stylesheet" href="../../components/everyPages.css">
+    
+  <!-- Importação dos arquivos CSS do Slick carousel -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+  <!-- Importação do jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <link rel="shortcut icon" href="../../components/images/favicon-2.png" type="image/x-icon">
+
+</head>
+<body>
+	<header id="box-principal">
+        <div class="header-top">
+            <nav class="botoes-vendedor">
+                <span class="Central-vendedor buttons">Seller Center</span>
+                <span class="buttons"><a href="../cadastro_vendedor-ing/cadastroVendedor.html">Become a Seller</a></span>
+            </nav>
+            <div class="barra-pesquisa">
+                
+                <input 
+                type="search" 
+                name="pesquisar" 
+                id="input-pesquisa"
+                placeholder="Search..." onclick="this.placeholder=''">
+            </div>
+            <nav class="botoes-entrar-cadastrar">
+                <span class="buttons"><a href="../cadastro_cliente-ing/cadastroCliente.html">Sign up</a></span>
+                <a href="../../pages/cadastro_vendedor/cadastroVendedor.html">
+                    <img class="icons_paises" src="../../components/images/brasil.png">
+                </a>
+
+                <a href="">
+                    <img class="icons_paises" src="../../components/images/eua.png">
+                </a>
+
+                <a href="../../pages-espanhol/cadastro_vendedor/cadastroVendedor.html">
+                    <img class="icons_paises" src="../../components/images/espanha.png">
+                </a>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <a href="index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+            <nav>
+		        <span class="buttons"><a href="../home-ing/index.html">HOME</a></span>
+                <span class="buttons"><a href="../produtos-ing/produtos.html">PRODUCTS</a></span>
+                <span class="buttons"><a href="../catalogos-ing/catalogos.html">CATALOGS</a></span>
+                <span class="buttons"><a href="../nossa_historia-ing/nossaHistoria.html">OUR STORY</a></span>
+                <span class="buttons"><a href="../contato-ing/estiloContato.css">CONTACT</a></span>
+            </nav>
+            <div>
+                <img class="icon-header entrar" src="../../components/images/icon_person.png">
+                <img class="icon-header" src="../../components/images/icon_bell.png">
+                <a href="../carrinho_compras-ing/carrinhoCompras.html">
+                    <img class="icon-header" src="../../components/images/icon_cart.png">
+                </a>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <header id="box-principal-mobile">
+        <div class="box-logo-menu-mobile">
+            <img class="menu-img" src="../../components/images/meu.png">
+             <a href="index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+        </div>
+        <div class="box-menu-mobile">
+            <nav class="botoes-vendedor">
+                <div class="icons_linguage_chamada_mobile">
+                    <span class="buttons"><a href="../cadastro_cliente-ing/cadastroCliente.html">Sing Up</a></span>
+                    <span class="Central-vendedor buttons">Seller Center</span>
+                    <span class="buttons"><a href="../cadastro_vendedor-ing/cadastroVendedor.html">Become a Seller</a></span>
+                </div>
+                
+                <div class="icons_linguage_chamada_mobile">
+                    <a href="../../pages/cadastro_vendedor/cadastroVendedor.html">
+                        <img class="icons_paises" src="../../components/images/brasil.png">
+                    </a>
+
+                    <a href="">
+                        <img class="icons_paises" src="../../components/images/eua.png">
+                    </a>
+
+                    <a href="../../pages-espanhol/cadastro_vendedor/cadastroVendedor.html">
+                        <img class="icons_paises" src="../../components/images/espanha.png">
+                    </a>
+                </div>
+                
+            </nav>
+            <div class="header-top">
+                <div class="box-pesquisa-icons-mobile">
+                    <div class="barra-pesquisa">
+                        <img src="../../components/images/icon-search.png" alt="">
+                        <input 
+                        type="search" 
+                        name="pesquisar" 
+                        id="input-pesquisa"
+                        placeholder="Search..." onclick="this.placeholder=''">
+                    </div>
+                        <div class="icons-mobile">
+                            <img class="icon-header entrar" src="../../components/images/icon_person.png">
+                            <img class="icon-header" src="../../components/images/icon_bell.png">
+                           <a href="../carrinho_compras-ing/carrinhoCompras.html">
+                    <img class="icon-header" src="../../components/images/icon_cart.png">
+                </a>
+                        </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav class="nav-pages-mobile">
+                    <span class="buttons"><a href="../home-ing/style.css">HOME</a></span>
+                    <span class="buttons"><a href="../produtos-ing/produtos.html">PRODUCTS</a></span>
+                    <span class="buttons"><a href="../catalogos-ing/catalogos.html">CATALOGS</a></span>
+                    <span class="buttons"><a href="../nossa_historia-ing/nossaHistoria.html">OUR STORY</a></span>
+                    <span class="buttons"><a href="../contato-ing/contato.html">CONTACT</a></span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <main>
+    	<section class="box-central">
+            <div class="info-breadcrumbs">
+                <span class="breadcrumbs">Home |<span> Become a Seller</span></span>
+            </div>
+    		<div class="box-cards">
+    			<div class="card-info-vendedor">
+	    			<img src="images/versao-ingles-banner-jardin.png">
+	    		</div>
+	    		<div class="card-form-vendedor">
+	    			<h3>Seller Registration</h3>
+	    			<form class="form">
+	    				<div class="form-line">
+	    					<div class="box-form-line">
+	    						<label >Name</label>
+	    						<input class="input" type="text" name="">
+	    					</div>
+	    					<div class="box-form-line">
+	    						<label class="label-line">Last Name</label>
+	    						<input class="input-line input" type="text" name="">
+	    					</div>
+	    				</div>
+	    				<label>E-mail</label>
+	    				<input class="input" type="email" name="">
+
+	    				<label>Phone Number</label>
+	    				<input class="input" type="text" name="">
+
+	    				<label>Password</label>
+	    				<input class="input" type="password" name="">
+
+	    				<label>Confirm Password</label>
+	    				<input class="input" type="password" name="">
+
+	    				<div class="form-line">
+	    					<div class="box-form-line">
+	    						<label>Adress</label>
+	    						<input class="input-line-tall input" type="text" name="">
+	    					</div>
+	    					<div class="box-form-line">
+	    						<label class="label-line-small">ZIP CODE</label>
+	    						<input class="input-line-small input" type="text" name="">
+	    					</div>
+	    				</div>
+	    			</form>
+
+	    			<div class="card-sobre-vendedor">
+		    			<h3>About Your Company</h3>
+		    			<form class="form-sobre">
+		    				<label>TIN / MEI</label>
+	    					<input id="input" class="input" type="text" name="">
+	    					
+	    					<span>What is the size of your company?</span>
+	    					<div class="box-form-sobre">
+	    						<input class="radio left" type="radio" name="Pequeno" value="Pequeno">
+	    						<label>Small</label>
+		    					<input class="radio" type="radio" name="Médio" value="Médio">
+		    					<label>Medium </label>
+		    					<input class="radio " type="radio" name="Grande" value="Grande">
+		    					<label>Large</label>
+		    				</div>
+		    				<br>
+	    					<span>What will you export?</span>
+	    					<div class="box-form-sobre">
+	    						<input class="radio left" type="checkbox" name="Pequeno" value="Pequeno">
+	    						<label>Flowers</label>
+		    					<input class="radio" type="checkbox" name="Médio" value="Médio">
+		    					<label>Foliage</label>
+		    					<input class="radio " type="checkbox" name="Grande" value="Grande">
+		    					<label>Seeds</label>
+		    				</div>
+	    					<br>
+	    					<span>Choose your subscription plan</span>
+	    					<div>
+	    						<div class="box-form-sobre-radio">
+	    							<input class="radio left" type="radio" name="Pequeno" value="Pequeno">
+	    							<label>Simple Plan | US$ 4.03 </label>
+	    						</div>
+	    						<div class="box-form-sobre-radio">
+	    							<input class="radio left" type="radio" name="Médio" value="Médio">
+		    						<label>Silver Plan | US$ 10.08</label>
+	    						</div>
+	    						<div class="box-form-sobre-radio">
+	    							<input class="radio left" type="radio" name="Grande" value="Grande">
+		    						<label>Gold Plan | US$ 20.16</label>
+	    						</div>
+		    				</div>
+		    				<p>*Information about the plans</p>
+		    			</form>
+		    		</div>
+		    		<input class="sobre-submit" type="submit" name="" value="REGISTER">
+		    		<div class="clear"></div><!-- Limpeza da fltuação -->
+	    		</div>
+    		</div>
+    	</section>
+
+       <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+       <section class="fundo-modal cliente-modal">
+            <div class="modal cliente">
+                <span class="legenda">Home | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN</h3>
+                    <br>
+                    <span class="text-modal">Welcome back to our Garden!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/botão-google-inggoogle-button.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Password">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Forgotten Password?</span>
+                            <span class="text-gray">Need Help?</span>
+                        </div>
+
+                        <input onclick="test2()" id="link2" type="button" name="" value="Sign up">
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="fundo-modal  vendedor-modal">
+            <div class="modal vendedor">
+                <span class="legenda">Home | Seller Center | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>SELLER LOGIN</h3>
+                    <br>
+                    <span class="text-modal">Welcome back to our Garden!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/botão-google-inggoogle-button.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Password">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Forgotten password?</span>
+                            <span class="text-gray">Need Help?</span>
+                        </div>
+
+                        <input onclick="test();" id="link" type="button" name="" value="Sign up">
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
+    <section class="icons_noturno">
+        <img id="fonte+" onclick="aumentarFonte()" style="cursor: pointer;" src="../../components/images/fonte+.png">
+        <img id="fonte-" onclick="diminuirFonte()" style="cursor: pointer;" src="../../components/images/fonte+.png">
+        <img id="icon_lua" style="cursor: pointer;" src="../../components/images/sol_lua.png">
+        <img id="icon_sol" style="cursor: pointer;" src="../../components/images/sol_lua.png">
+    </section>
+
+
+</main>
+<footer>
+    <h2>Contact us for more information</h2>
+    <div class="box-footer">
+        <div class="box-left-footer">
+            <ul>
+                <li>Rua das Colhetas, 258-A, Apipucos</li>
+                <li>Recife, PE - Brazil</li>
+                <li>CEP: 10254-330</li>
+                <br>
+                <br>
+                <li>P&F DECORATION AND AMBIANCE</li>
+                <li>LTDA 08.591.212/0004-07</li>
+            </ul>
+        </div>
+
+        <div class="logo-footer">
+            <img src="../../components/images/logo.png">
+        </div>
+       
+        <div class="box-rigth-footer">
+            <span>Find us on social networks</span>
+            <ul>
+                <li>
+                   <img src="../../components/images/facebook.png">
+                </li>
+                <li>
+                   <img src="../../components/images/instagram.png">
+                </li>
+                <li>
+                   <img src="../../components/images/whatsapp.png">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                   <img src="../../components/images/logotipo-do-pinterest.png">
+                </li>
+                <li>
+                   <img src="../../components/images/twitter.png">
+                </li>
+                <li>
+                   <img src="../../components/images/youtube.png">
+                </li>
+            </ul>
+            <span>contato@proteaflowers.com.br</span>
+        </div>
+    </div>
+    
+</footer>
+    <script type="text/javascript" src="../../components/script.js"></script>
+</body>
+</html>
