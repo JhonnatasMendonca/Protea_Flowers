@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia - Protea Flowers</title>
+    <link rel="stylesheet" href="estiloNossaHistoria.css">
+    <link rel="stylesheet" href="../../components/everyPages.css">
+  
+  <!-- Importação do jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="shortcut icon" href="../../components/images/favicon-2.png" type="image/x-icon">
+</head>
+<script>var BotStar={appId:"s75c37c0f-67f5-4c7d-b11c-1ee8a1f717b7",mode:"livechat"};!function(t,a){var e=function(){(e.q=e.q||[]).push(arguments)};e.q=e.q||[],t.BotStarApi=e;!function(){var t=a.createElement("script");t.type="text/javascript",t.async=1,t.src="https://widget.botstar.com/static/js/widget.js";var e=a.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();}(window,document)</script>
+<body>
+	<header id="box-principal">
+        <div class="header-top">
+            <nav class="botoes-vendedor">
+                <span class="Central-vendedor buttons">Centro de Vendedores</span>
+                <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Conviértete en Vendedor</a></span>
+            </nav>
+            <div class="barra-pesquisa">
+                
+                <input 
+                type="search" 
+                name="pesquisar" 
+                id="input-pesquisa"
+                placeholder="Buscar..." onclick="this.placeholder=''">
+            </div>
+            <nav class="botoes-entrar-cadastrar">
+                <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Registro</a></span>
+                <a href="../../pages/nossa_historia/nossaHistoria.html">
+                    <img class="icons_paises" src="../../components/images/brasil.png">
+                </a>
+
+                <a href="../../pages-ingles/nossa_historia-ing/nossaHistoria.html">
+                    <img class="icons_paises" src="../../components/images/eua.png">
+                </a>
+
+                <a href="">
+                    <img class="icons_paises" src="../../components/images/espanha.png">
+                </a>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+            <nav>
+                <span class="buttons"><a href="../home/index.html">HOGAR</a></span>
+                <span class="buttons"><a href="../produtos/produtos.html">PRODUCTOS</a></span>
+                <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
+                <span class="buttons" style="color: #0F270F">NUESTRA HISTORIA</span>
+                <span class="buttons"><a href="../contato/contato.html">CONTACTO</a></span>
+            </nav>
+            <div>
+                <img class="icon-header entrar" src="../../components/images/icon_person.png">
+                <img class="icon-header" src="../../components/images/icon_bell.png">
+                <a href="../carrinho_compras/carrinhoCompras.html">
+                    <img class="icon-header" src="../../components/images/icon_cart.png">
+                </a>
+            </div>        
+        </div>
+        <hr>
+    </header>
+
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <header id="box-principal-mobile">
+        <div class="box-logo-menu-mobile">
+            <img class="menu-img" src="../../components/images/meu.png">
+             <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+        </div>
+        <div class="box-menu-mobile">
+            <nav class="botoes-vendedor">
+                <div>
+                    <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Registro</a></span>
+                    <span class="Central-vendedor buttons">Centro de Vendedores</span>
+                    <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Conviértete en Vendedor</a></span>
+                </div>
+                
+                <div>
+                    <a href="../../pages/nossa_historia/nossaHistoria.html">
+                        <img class="icons_paises" src="../../components/images/brasil.png">
+                    </a>
+
+                    <a href="../../pages-ingles/nossa_historia-ing/nossaHistoria.html">
+                        <img class="icons_paises" src="../../components/images/eua.png">
+                    </a>
+
+                    <a href="">
+                        <img class="icons_paises" src="../../components/images/espanha.png">
+                    </a>
+                </div>
+            </nav>
+            <div class="header-top">
+                <div class="box-pesquisa-icons-mobile">
+                    <div class="barra-pesquisa">
+                        <img src="../../components/images/icon-search.png" alt="">
+                        <input 
+                        type="search" 
+                        name="pesquisar" 
+                        id="input-pesquisa"
+                        placeholder="Buscar..." onclick="this.placeholder=''">
+                    </div>
+                     <div class="icons-mobile">
+                        <img class="icon-header entrar" src="../../components/images/icon_person.png">
+                        <img class="icon-header" src="../../components/images/icon_bell.png">
+                        <a href="../carrinho_compras/carrinhoCompras.html">
+                            <img class="icon-header" src="../../components/images/icon_cart.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav class="nav-pages-mobile">
+                    <span class="buttons" style="color: #0F270F"><a href="../home/index.html">HOGAR</a></span>
+                    <span class="buttons"><a href="../produtos/produtos.html">PRODUCTOS</a></span>
+                    <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
+                    <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NUESTRA HISTORIA</a></span>
+                    <span class="buttons"><a href="../contato/contato.html">CONTACTO</a></span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    
+    <main>
+        <div class="info-breadcrumbs">
+            <span class="breadcrumbs">Hogar |<span> Nuestra Historia</span></span>
+            <h1 class="titulo-font-marcellus">NUESTRA HISTORIA</h1>
+        </div>
+
+        <section class="divisao-bloco">
+            <div class="bloco-info-nh">
+                <img class="imagem-bloco-info" src="images/como-comecamos.png">
+                <div id="texto-bloco-info-1">
+                    <h3 class="titulo-bloco-info">Donde todo comenzo</h3>
+                    <br>
+                    <p>Había una vez un agricultor llamado João Carlos, que nació y se crió en el negocio de las flores. Sus padres eran floricultores y él
+                    pequeño aprendió a cuidar las plantas con mucho cariño y dedicación. En 1969 João decidió montar su propia empresa de exportación.
+                    de flores, utilizando todo el conocimiento adquirido a lo largo de los años, y así nació Protea Flowers.
+                    <br> <br>
+                    Al principio, la empresa de João Carlos operaba modestamente, vendiendo flores en el mercado local. Pero con el paso del tiempo, él
+                    se dio cuenta de que había una gran oportunidad en el mercado de exportación. Carlos comenzó a invertir en tecnología y técnicas de exportación.
+                    para mejorar la calidad de su exportación y aumentar su producción.</p>
+                </div> 
+            </div>
+            <hr>
+        </section>
+
+       <section class="divisao-bloco">
+            <div class="bloco-info-nh">
+                <img class="imagem-bloco-info responsivo" src="images/nosso-crescimento.png">  
+                <div id="texto-bloco-info-2">
+                    <h3 class="titulo-bloco-info">Nuestro crecimiento</h3>
+                    <br>
+                    <p>Con el éxito y crecimiento de la empresa, João Carlos pasó a comprar otras empresas exportadoras más pequeñas, incorporando sus recursos y ampliando su área de actuación. 
+                    <br> <br>
+                    Poco a poco, Protea Flowers se convirtió en una de las más grandes en el negocio de exportación de flores, con una cartera diversificada de productos que atiende a clientes en todo el mundo. Actualmente, la empresa fundada en su día por João Carlos es una de las mayores del mundo en el negocio de exportación de flores. Sus hijos y nietos siguieron sus pasos y mantuvieron la tradición de calidad y excelencia que siempre defendió.</p>
+                </div>
+                <img class="imagem-bloco-info normal" src="images/nosso-crescimento.png">    
+            </div>
+            <hr>
+       </section>
+        
+       <section class="divisao-bloco">
+            <div class="bloco-info-nh">
+                <img class="imagem-bloco-info" src="images/onde-estamos.png">
+                <div id="texto-bloco-info-3">
+                    <h3 class="titulo-bloco-info">Misión</h3>
+                    <p>Brindando flores tropicales de alta calidad a clientes de todo el mundo, asegurando un servicio excepcional y responsabilidad ambiental en cada etapa del proceso de producción y exportación.
+                    </p> <br>
+                    <h3 class="titulo-bloco-info">Visión</h3>
+                    <p>Convertirnos en una de las principales empresas exportadoras de flores tropicales del mundo, reconocida por la calidad de sus productos y servicios, así como por su compromiso con la sustentabilidad y la responsabilidad social.</p> <br>
+                    <h3 class="titulo-bloco-info">Valores</h3>
+                    <p>1. Calidad: buscamos ofrecer las mejores flores tropicales del mercado. <br> 2. Sostenibilidad: estamos comprometidos con la preservación del medio ambiente, en las etapas del proceso de producción y exportación. <br>
+                    3. Integridad: actuamos con ética y transparencia. <br>
+                    4. Innovación: siempre estamos buscando nuevas tecnologías y metodologías. <br>
+                    5. Excelencia en el servicio: ofrecemos un servicio personalizado y de alta calidad a todos nuestros clientes.</p> 
+                </div>   
+            </div>
+       </section>
+       
+        
+
+        <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+        <section class="fundo-modal cliente-modal">
+            <div class="modal cliente">
+                <span class="legenda">Hogar | Entrar</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN</h3>
+                    <br>
+                    <span class="text-modal">¡Bienvenido de nuevo a nuestro Jardín!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/botão-google-esp.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Contraseña">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">¿Olvido la contraseña?</span>
+                            <span class="text-gray">¿Necesita ayuda?</span>
+                        </div>
+
+                        <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="fundo-modal  vendedor-modal">
+            <div class="modal vendedor">
+                <span class="legenda">Hogar | Centro de Vendedores | Acceso</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>INICIO DE SESIÓN DEL VENDEDOR</h3>
+                    <br>
+                    <span class="text-modal">¡Bienvenido de nuevo a nuestro Jardín!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/botão-google-esp.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Contraseña">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">¿Olvido la contraseña?</span>
+                            <span class="text-gray">¿Necesita ayuda?</span>
+                        </div>
+
+                        <input onclick="test();" id="link" type="button" name="" value="Entrar">
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
+        <!-- <section>
+            <div class="chat_icon">
+                <img src="images/chat.png">
+            </div>
+            <div class="box-questions">
+                <div class="header">
+                    <div class="florea_perfil">
+                        <img id="florea_icon" src="images/florea.png">
+                        <p>Florea</p>
+                    </div>
+                    <img id="fechar_chat" src="images/fechar.png">
+                </div>
+                <p id="status"></p>
+                <div id="history">
+                  
+                </div>
+                <div class="footer">
+                    <input type="text" id="message-input" placeholder="Enviar uma mensagem...">
+                    <button class="btn-submit" id="btn-submit" onclick="sendMessage()"></button>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section> -->
+
+
+
+        <section class="icons_noturno">
+            <img id="fonte+" onclick="aumentarFonte()" style="cursor: pointer;" src="../../components/images/fonte+.png">
+            <img id="fonte-" onclick="diminuirFonte()" style="cursor: pointer;" src="../../components/images/fonte+.png">
+            <img id="icon_lua" style="cursor: pointer;" src="../../components/images/sol_lua.png">
+            <img id="icon_sol" style="cursor: pointer;" src="../../components/images/sol_lua.png">
+        </section>
+
+
+    </main>
+    <footer>
+        <h2>Póngase en contacto con nosotros para más información</h2>
+        <div class="box-footer">
+            <div class="box-left-footer">
+                <ul>
+                    <li>Calle de las Colheitas, 258-A, Apipucos</li>
+                    <li>Recife, PE - Brazil</li>
+                    <li>CEP: 10254-330</li>
+                    <br>
+                    <br>
+                    <li>P&F DECORACIÓN Y AMBIENTACIÓN</li>
+                    <li>LTDA 08.591.212/0004-07</li>
+                </ul>
+            </div>
+
+            <div class="logo-footer">
+                    <img src="../../components/images/logo.png">
+            </div>
+            
+            <div class="box-rigth-footer">
+                <span>Encuéntranos en las redes sociales</span>
+                <ul>
+                    <li>
+                        <img src="../../components/images/facebook.png">
+                    </li>
+                    <li>
+                        <img src="../../components/images/instagram.png">
+                    </li>
+                    <li>
+                        <img src="../../components/images/whatsapp.png">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="../../components/images/logotipo-do-pinterest.png">
+                    </li>
+                    <li>
+                        <img src="../../components/images/twitter.png">
+                    </li>
+                    <li>
+                        <img src="../../components/images/youtube.png">
+                    </li>
+                </ul>
+                <span>contato@proteaflowers.com.br</span>
+            </div>
+        </div>
+        
+    </footer>
+    <script type="text/javascript" src="../../components/script.js"></script>
+</body>
+</html>

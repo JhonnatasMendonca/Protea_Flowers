@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Protea Flowers</title>
+    <link rel="stylesheet" href="perfil_comprador.css">
+    <link rel="stylesheet" href="../../components/everyPages.css">
+    <link rel="shortcut icon" href="../../components/images/favicon-2.png" type="image/x-icon">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header id="box-principal">
+        <div class="header-top">
+            <nav class="botoes-vendedor">
+                <span class="Central-vendedor buttons"><a href=""></a>Centro de Vendedores</span>
+                <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Conviértete en Vendedor</a></span>
+            </nav>
+            <div class="barra-pesquisa">
+                
+                <input 
+                type="search" 
+                name="pesquisar" 
+                id="input-pesquisa"
+                placeholder="Buscar..." onclick="this.placeholder=''">
+            </div>
+            <nav class="botoes-entrar-cadastrar">
+                <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Registro</a></span>
+                <a href="../../pages/perfil_comprador/perfil_comprador.html">
+                    <img class="icons_paises" src="../../components/images/brasil.png">
+                </a>
+
+                <a href="../../pages-ingles/perfil_comprador-ing/perfil_comprador.html">
+                    <img class="icons_paises" src="../../components/images/eua.png">
+                </a>
+
+                <a href="">
+                    <img class="icons_paises" src="../../components/images/espanha.png">
+                </a>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png">
+            </a>
+            <nav>
+                <span class="buttons"><a href="../home/index.html">HOGAR</a></span>
+                <span class="buttons"><a href="../produtos/produtos.html">PRODUCTOS</a></span>
+                <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
+                <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NUESTRA HISTORIA</a></span>
+                <span class="buttons"><a href="../contato/contato.html">CONTACTO</a></span>
+            </nav>
+            <div>
+                <img class="icon-header entrar" src="../../components/images/icon_person.png">
+                <img class="icon-header" src="../../components/images/icon_bell.png">
+                <a href="../carrinho_compras/carrinhoCompras.html">
+                    <img class="icon-header" src="../../components/images/icon_cart.png">
+                </a>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <header id="box-principal-mobile">
+        <div class="box-logo-menu-mobile">
+            <img class="menu-img" src="../../components/images/meu.png">
+             <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+        </div>
+        <div class="box-menu-mobile">
+            <nav class="botoes-vendedor">
+                <div class="icons_linguage_chamada_mobile">
+                    <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Registro</a></span>
+                    <span class="Central-vendedor buttons">Centro de Vendedores</span>
+                    <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Conviértete en Vendedor</a></span>
+                </div>
+                
+                <div class="icons_linguage_chamada_mobile">
+                    <a href="../../pages/perfil_comprador/perfil_comprador.html">
+                        <img class="icons_paises" src="../../components/images/brasil.png">
+                    </a>
+
+                    <a href="../../pages-ingles/perfil_comprador-ing/perfil_comprador.html">
+                        <img class="icons_paises" src="../../components/images/eua.png">
+                    </a>
+
+                    <a href="">
+                        <img class="icons_paises" src="../../components/images/espanha.png">
+                    </a>
+                </div>
+            </nav>
+            <div class="header-top">
+                <div class="box-pesquisa-icons-mobile">
+                    <div class="barra-pesquisa">
+                        <img src="../../components/images/icon-search.png" alt="">
+                        <input 
+                        type="search" 
+                        name="pesquisar" 
+                        id="input-pesquisa"
+                        placeholder="Buscar..." onclick="this.placeholder=''">
+                    </div>
+                     <div class="icons-mobile">
+                        <img class="icon-header entrar" src="../../components/images/icon_person.png">
+                        <img class="icon-header" src="../../components/images/icon_bell.png">
+                        <a href="../carrinho_compras/carrinhoCompras.html">
+                            <img class="icon-header" src="../../components/images/icon_cart.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav class="nav-pages-mobile">
+                    <span class="buttons" style="color: #0F270F"><a href="../home/index.html">HOGAR</a></span>
+                    <span class="buttons"><a href="../produtos/produtos.html">PRODUVTOS</a></span>
+                    <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
+                    <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NUESTRA HISTORIA</a></span>
+                    <span class="buttons"><a href="../contato/contato.html">CONTACTO</a></span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+
+
+
+    <main>
+        <div class="info-breadcrumbs">
+            <span class="breadcrumbs">Hogar |<span> Perfil del Usuario</span></span>
+        </div>
+
+        <div class="container">
+            <section id="perfil">
+                <div>
+                    <!--CRIEI UMA DIV PARA MELHORAR NA PARTE DO RESPONSIVO-->
+                    <div id="perfil-responsivo">
+                        <div id="perfil-top">
+                            <img src="images/foto-perfil.png" alt="Foto de perfil">
+                            <h4>Hola, Rayane Gaudêncio!</h4>
+                            <span>rayanegaudencio@gmail.com</span>
+                        </div>
+                        <div id="perfil-center">
+                            <span><img src="images/cartao 1.png" alt="Minha carteira">Mi billetera</span>
+                            <span><img src="images/localizacao 1.png" alt="Localização">Ubicación</span>
+                            <span><img src="images/configuracoes-cog 1.png" alt="Configurações">Ajustes</span>
+                        </div>   
+                    </div>
+                    <div id="perfil-bottom">
+                        <a href="../home/index.html"><span>Salir</span></a>
+                        <span>Administrar Cuenta</span>
+                    </div>
+                </div>
+            </section>
+            <div id="container-2">
+                <section id="meus-pedidos">
+                    <span id="ver-tudo">Verlo todo <img class="seta-ver" src="images/seta-direita 1.png" alt=""></span>
+                    <h4>Mis pedidos</h4>
+                    <div id="row-2">
+                        <li>
+                            <img src="images/processando.png" alt="Pedidos em proce/ssamento">
+                            <span>Procesando</span>
+                        </li>
+                        <li>
+                            <img src="images/enviado.png" alt="Pedidos enviados">
+                            <span>Enviado</span>
+                        </li>
+                        <li>
+                            <img src="images/comentar.png" alt="Comentar">
+                            <span>Comentario</span>
+                        </li>
+                        <li>
+                            <img src="images/devolucao.png" alt="Pedir devolução">
+                            <span>Devolución</span>
+                        </li>
+                    </div>
+                    <div id="itens">
+                        <h5>22 de Octubre de 2022 | 22:24</h5>
+                        <aside>
+                            <img id="icon-seta" src="images/seta-esquerda 1.png" alt="">
+                            <img src="images/flor.png" alt="flor">
+                            <img id="icon-seta" src="images/seta-direita 1.png" alt="">
+                            <span>5 itens</span>
+                            <span>€250,00</span>
+                            <span>Enviado</span>
+                            <span>Detalles del pedido</span>
+                        </aside>
+                    </div>
+                </section>
+                <section class="cards" id="favoritos">
+                    <h5>Favoritos</h5>
+                    <div class="imagens">
+                        <img src="images/astromelias-flores-tropicais 1.png" alt="Atromelia">
+                        <img src="images/astromelias-flores-tropicais 1.png" alt="Atromelia">
+                        <img src="images/astromelias-flores-tropicais 1.png" alt="Atromelia">
+                    </div>
+                    <div>
+                        <span>Ver más</span><img class="seta-ver" src="images/seta-direita 1.png" alt="">
+                    </div>
+                </section>
+                <section class="cards" id="vistos-recentemente">
+                    <h5>Visto recientemente</h5>
+                    <div class="imagens">
+                        <img src="images/astromelias-flores-tropicais 1.png" alt="Atromelia">
+                        <img src="images/astromelias-flores-tropicais 1.png" alt="Atromelia">
+                        <img src="images/astromelias-flores-tropicais 1.png" alt="Atromelia">
+                    </div>
+                    <div>
+                        <span>Ver más</span><img class="seta-ver" src="images/seta-direita 1.png" alt="">
+                    </div>
+                </section>
+                <section id="nav-bottom">
+                    <div>
+                        <img src="images/minhas-mensagens.png" alt="Minhas mensagens">
+                        <span>Mis mensajes</span>
+                    </div>
+                    <div>
+                        <img src="images/servico-de-registros.png" alt="Serviço de registros">
+                        <span>Servicio de registros</span>
+                    </div>
+                    <div>
+                        <img src="images/central-de-ajuda.png" alt="Central de ajuda">
+                        <span>Centro de ayuda</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+        <section class="fundo-modal cliente-modal">
+            <div class="modal cliente">
+                <span class="legenda">Hogar | Entrar</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>ACCESO</h3>
+                    <br>
+                    <span class="text-modal">¡Bienvenido de nuevo a nuestro Jardín!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/botão-google-esp.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Contraseña">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">¿Olvido la contraseña?</span>
+                            <span class="text-gray">¿Necesita ayuda?</span>
+                        </div>
+
+                        <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="fundo-modal  vendedor-modal">
+            <div class="modal vendedor">
+                <span class="legenda">Hogar | Centro de Vendedores | Acceso</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>INICIO DE SESIÓN DEL VENDEDOR</h3>
+                    <br>
+                    <span class="text-modal">¡Bienvenido de nuevo a nuestro Jardín!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/botão-google-esp.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Contraseña">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">¿Olvido la contraseña?</span>
+                            <span class="text-gray">¿Necesita ayuda?</span>
+                        </div>
+
+                        <input onclick="test();" id="link" type="button" name="" value="Entrar">
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
+        <!-- <section>
+            <div class="chat_icon">
+                <img src="images/chat.png">
+            </div>
+            <div class="box-questions">
+                <div class="header">
+                    <div class="florea_perfil">
+                        <img id="florea_icon" src="images/florea.png">
+                        <p>Florea</p>
+                    </div>
+                    <img id="fechar_chat" src="images/fechar.png">
+                </div>
+                <p id="status"></p>
+                <div id="history">
+                  
+                </div>
+                <div class="footer">
+                    <input type="text" id="message-input" placeholder="Enviar uma mensagem...">
+                    <button class="btn-submit" id="btn-submit" onclick="sendMessage()"></button>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section> -->
+
+
+
+        <section class="icons_noturno">
+            <img id="fonte+" onclick="aumentarFonte()" style="cursor: pointer;" src="../../components/images/fonte+.png">
+            <img id="fonte-" onclick="diminuirFonte()" style="cursor: pointer;" src="../../components/images/fonte+.png">
+            <img id="icon_lua" style="cursor: pointer;" src="../../components/images/sol_lua.png">
+            <img id="icon_sol" style="cursor: pointer;" src="../../components/images/sol_lua.png">
+        </section>
+
+    </main>
+    <footer>
+        <h2>Póngase en contacto con nosotros para más información</h2>
+        <div class="box-footer">
+            <div class="box-left-footer">
+                <ul>
+                    <li>Calle de las Colheitas, 258-A, Apipucos</li>
+                    <li>Recife, PE - Brazil</li>
+                    <li>CEP: 10254-330</li>
+                    <br>
+                    <br>
+                    <li>P&F DECORACIÓN Y AMBIENTACIÓN</li>
+                    <li>LTDA 08.591.212/0004-07</li>
+                </ul>
+            </div>
+
+            <div class="logo-footer">
+                 <img src="../../components/images/logo.png">
+            </div>
+            
+            <div class="box-rigth-footer">
+                <span>Encuéntranos en las redes sociales</span>
+                <ul>
+                    <li>
+                        <img src="../../components/images/facebook.png">
+                    </li>
+                    <li>
+                        <img src="../../components/images/instagram.png">
+                    </li>
+                    <li>
+                        <img src="../../components/images/whatsapp.png">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="../../components/images/logotipo-do-pinterest.png">
+                    </li>
+                    <li>
+                        <img src="../../components/images/twitter.png">
+                    </li>
+                    <li>
+                        <img src="../../components/images/youtube.png">
+                    </li>
+                </ul>
+                <span>contato@proteaflowers.com.br</span>
+            </div>
+        </div>
+        
+    </footer>
+    <script type="text/javascript" src="../../components/script.js"></script>
+</body>
+</html>
