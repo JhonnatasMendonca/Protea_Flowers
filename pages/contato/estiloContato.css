@@ -1,3 +1,11 @@
+#icon-face-branca, #icon-insta-branca, #icon-whatsapp-branca, #icon-pinterest-branca, #icon-tw-branca, #icon-youtube-branca{
+    display: none;
+}
+
+#icon-face, #icon-insta, #icon-whatsapp, #icon-pinterest, #icon-tw, #icon-youtube{
+    display: block;
+}
+
 .conteudo-c {
     padding: 2em;
     display: flex;
