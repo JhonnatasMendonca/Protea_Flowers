@@ -41,14 +41,23 @@
     flex-direction: column;
 }
 
+
+
+
 .linha{
     border-right: 1px dashed black;
     padding-right: 1em;
     height: 200px;
 }
 
-.centro img{
+.img-lixo{
     width: 40px;
+    display: block;
+}
+
+.img-lixo-branca {
+    width: 40px;
+    display: none;
 }
 
 .box-inputs{
