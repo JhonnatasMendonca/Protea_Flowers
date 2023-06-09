@@ -78,9 +78,21 @@ document.addEventListener('DOMContentLoaded', function() {
     $("#icon_lua").click(function(){
 
         $('#icon_lua').css("display", "none");
-        $('body, footer, header').css("background-color", "black"); 
-        $('a, li, span, h1, h2, h3, p').css("color", "white");
-        $('#icon_sol').css("display", "block");    
+        $('body, footer, header, .principal-box, .comentarios, .main').css("background-color", "black"); 
+        $('a, li, span, h1, h2, h3, h4, p, label').css("color", "white");
+        $('#icon_sol').css("display", "block");
+
+        $('.box-demonstracao, .add_produto, .box-img, .box-container, .flor-parecida, .info, .box-centro-dados').css("background-color", "#0F270F");
+
+        // $('.add_produto').css("background-color", "black");
+        $('.botao-claro').css("background-color", "#859479");
+        $('.card-form-vendedor').css("background-color", "#3D0E0A");
+
+        $('.img-lixo, #icon-face, #icon-insta, #icon-whatsapp, #icon-pinterest, #icon-tw, #icon-youtube').css("display", "none");
+        $('.img-lixo-branca, #icon-face-branca, #icon-insta-branca, #icon-whatsapp-branca, #icon-pinterest-branca, #icon-tw-branca, #icon-youtube-branca').css("display", "block");
+        
+
+
        
     });
 
@@ -96,7 +108,30 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.text-capslock ').css("color", "#0F270F");
         $('.informacoes-left li, .informacoes-right li').css("color", "#0F270F");
         $('#icon_lua').css("display", "block");    
+
+
+        $('.breadcrumbs span').css("color", "#859479");
+        $('a, li, span, h1, h2, h3, h4, p, label').css("color", "#0F270F");
+        $('.header-bottom .buttons a').css("color", "#efefee");
+        $('.box-demonstracao, .box-img, .box-container').css("background-color", "#D9D9D9");
+        $('box-opcoes li').css("color", "#0F270F"); 
+        $('.texto-branco').css("color", "white"); 
+        $('.breadcrumbs-final').css("color", "#859479"); 
+        $('.page-atual').css("color", "#0F270F");
+        $('.add_produto, .card-form-vendedor, .box-centro-dados').css("background-color", "#FFFAF7");
+        $('.botao-claro').css("background-color", "#0F270F");
+        $('.principal-box, .comentarios').css("background-color", "#ffffff");
+        $('.flor-parecida').css("background-color", "#DBD8CF");
+        $('.info').css("background-color", "#DBE8D1");
+
+        $('.img-lixo, #icon-face, #icon-insta, #icon-whatsapp, #icon-pinterest, #icon-tw, #icon-youtube').css("display", "block");
+        $('.img-lixo-branca, #icon-face-branca, #icon-insta-branca, #icon-whatsapp-branca, #icon-pinterest-branca, #icon-tw-branca, #icon-youtube-branca').css("display", "none");
+
+
        
     });
+
+
+    
 
 });
